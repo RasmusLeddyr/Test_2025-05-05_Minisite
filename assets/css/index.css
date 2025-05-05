@@ -12,7 +12,7 @@
   font-size: 16px;
   font-weight: normal;
   color: black;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
 
   font-family: "Noto Sans";
 }
@@ -30,7 +30,7 @@
   --fw_heavy: 900;
 }
 
-/* TEXT */
+/*text*/
 h1 {
   font-size: 56px;
   font-weight: var(--fw_bold);
@@ -42,4 +42,71 @@ h2 {
 h3 {
   font-size: 16px;
   font-weight: var(--fw_semi-bold);
+}
+/*buttons*/
+.btn {
+  padding: 13px;
+  color: #fcfcfc;
+  background-color: #3c3c3c;
+}
+.btn:hover {
+  outline: 2px solid rgb(0, 0, 0);
+  background-color: white;
+  color: black;
+}
+
+/* HERO */
+
+/*navigation*/
+#hero nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#hero nav div {
+  font-weight: var(--fw_bold);
+  margin-right: auto;
+}
+#hero nav ul {
+  display: flex;
+  gap: 24px;
+  margin-right: 139px;
+}
+#hero nav .search {
+  margin-right: 40px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+#hero nav .search img {
+  width: 100%;
+}
+#hero nav .btn {
+  min-width: 144px;
+}
+/*header*/
+#hero {
+  background-image: url("../img/background-image.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 768px;
+  padding: 36px 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+#hero h1 {
+  max-width: 760px;
+  margin-bottom: 6px;
+  margin-top: auto;
+}
+#hero p {
+  max-width: 560px;
+  margin-bottom: 32px;
+}
+#hero .btn {
+  min-width: 208px;
+  margin-bottom: auto;
 }
