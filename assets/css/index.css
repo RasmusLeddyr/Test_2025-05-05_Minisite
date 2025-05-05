@@ -83,7 +83,7 @@ h3 {
   width: 100%;
 }
 #hero nav .btn {
-  min-width: 144px;
+  padding: 13px 42px;
 }
 /*header*/
 #hero {
@@ -107,6 +107,125 @@ h3 {
   margin-bottom: 32px;
 }
 #hero .btn {
-  min-width: 208px;
+  padding: 13px 74px;
   margin-bottom: auto;
+}
+
+/* FEATURED */
+
+/*main*/
+#featured {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  max-width: 100%;
+  gap: 24px;
+  padding: 80px 142px;
+}
+#featured h2 {
+  grid-column: 1/4;
+  grid-template-rows: 1/2;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+#featured h2::after {
+  content: "";
+  position: absolute;
+  background-color: #cfcfcf;
+  width: 80px;
+  height: 2px;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*articles*/
+#featured article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+#featured article img {
+  width: 100%;
+  margin-bottom: 33px;
+}
+#featured article h3 {
+  margin-bottom: 26px;
+}
+#featured article p {
+  margin-bottom: 32px;
+}
+#featured article .btn {
+  padding: 13px 38px;
+}
+
+/* NEWSLETTER */
+
+/*main*/
+#news {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* 419/1366 = 0.3 = 30% */
+  padding: 128px 30%;
+}
+#news h2 {
+  margin-bottom: 18px;
+}
+#news p {
+  margin-bottom: 38px;
+}
+/*subscribe*/
+#news .subscribe {
+  display: flex;
+  width: 100%;
+}
+#news .subscribe input {
+  background-color: white;
+  outline: 2px solid #3e3e3e;
+  padding: 13px 16px;
+  width: 100%;
+  margin-right: 16px;
+}
+#news .subscribe button {
+  padding: 13px 34px;
+}
+
+/* FOOTER */
+
+/*main*/
+footer {
+  background-color: #d0d0d0;
+  display: flex;
+  align-items: start;
+}
+/*mockup*/
+footer .mockup {
+  margin-top: 128px;
+  margin-left: 143px;
+  margin-right: auto;
+  max-width: 344px;
+}
+footer .mockup h2 {
+  margin-bottom: 16px;
+}
+footer .mockup p {
+}
+/*resources*/
+footer .resources {
+  margin-top: 133px;
+  margin-right: 182px;
+  margin-bottom: 134px;
+}
+footer .resources h2 {
+  margin-bottom: 36px;
+}
+footer .resources ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
