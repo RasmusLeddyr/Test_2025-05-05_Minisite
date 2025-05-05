@@ -1,7 +1,8 @@
 /* DEFAULTS */
 *,
 *::before,
-*::after {
+*::after,
+*::placeholder {
   margin: 0;
   padding: 0%;
   border: 0;
@@ -10,6 +11,35 @@
   list-style: none;
   font-size: 16px;
   font-weight: normal;
+  color: black;
+  background-color: white;
 
   font-family: "Noto Sans";
+}
+
+:root {
+  /* FONT WEIGHTS */
+  --fw_thin: 100;
+  --fw_extra-light: 200;
+  --fw_light: 300;
+  --fw_normal: 400;
+  --fw_medium: 500;
+  --fw_semi-bold: 600;
+  --fw_bold: 700;
+  --fw_extra-bold: 800;
+  --fw_heavy: 900;
+}
+
+/* TEXT */
+h1 {
+  font-size: 56px;
+  font-weight: var(--fw_bold);
+}
+h2 {
+  font-size: 32px;
+  font-weight: var(--fw_bold);
+}
+h3 {
+  font-size: 16px;
+  font-weight: var(--fw_semi-bold);
 }
