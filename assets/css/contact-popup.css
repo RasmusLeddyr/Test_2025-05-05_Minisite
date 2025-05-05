@@ -1,13 +1,84 @@
 #contact-popup {
+  display: none;
   outline: 2px solid black;
   background-color: white;
   width: 50%;
-  display: none;
   position: fixed;
-  left: 25%;
-  top: 25%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: row;
+  min-height: 50vh;
+  max-height: 100vh;
+  min-width: 75vw;
+  max-width: 100vw;
+}
+#contact-popup .interaction {
+  width: 50%;
+  padding: 6.6%;
+  box-sizing: border-box;
+}
+#contact-popup .interaction h2 {
+  margin-bottom: 33px;
+}
+#contact-popup .link {
+  display: flex;
+  align-items: center;
+}
+#contact-popup .link:nth-of-type(n + 2) {
+  margin-top: 16px;
+}
+#contact-popup .link img {
+  width: 24px;
+  margin-right: 16px;
+}
+#contact-popup .message {
+  margin-top: 62px;
+  width: 100%;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "name email"
+    "message message"
+    "send send";
+}
+#contact-popup input,
+#contact-popup textarea {
+  outline: 2px solid #3e3e3e;
+  width: 100%;
+  box-sizing: border-box;
+}
+#contact-popup .message input:nth-of-type(1) {
+  grid-area: name;
+  padding: 13px 16px;
+}
+#contact-popup .message input:nth-of-type(2) {
+  grid-area: email;
+  padding: 13px 16px;
+}
+#contact-popup .message textarea:nth-of-type(1) {
+  grid-area: message;
+  max-height: 107px;
+  padding: 16px;
+}
+#contact-popup .message button {
+  grid-area: send;
+}
+
+#contact-popup .map {
+  background-color: #ebebeb;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  padding: 32px;
+  margin: 16px;
+  resize: horizontal;
+}
+#contact-popup .map button {
 }
 
 #contact-popup.active {
-  display: block;
+  display: flex;
 }
