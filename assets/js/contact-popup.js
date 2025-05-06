@@ -7,6 +7,6 @@ popupButtons.forEach((item) => {
   item.addEventListener("click", clickEvent);
 });
 // CLICK FUNCTION
-function clickEvent(clickTarget) {
+function clickEvent() {
   popupElement.classList.toggle("active");
 }
