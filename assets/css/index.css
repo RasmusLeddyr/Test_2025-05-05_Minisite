@@ -90,7 +90,7 @@ h3 {
 #hero nav ul {
   display: flex;
   gap: 24px;
-  margin-right: 139px;
+  margin-right: calc((139 / var(--xd-width)) * 100vw);
 }
 #hero nav .search {
   margin-right: 40px;
